@@ -1,0 +1,83 @@
+/* VARIABLES */
+:root {
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	--dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+	/* border: solid 1px #000; (tipoDeBorde, ancho, color) */
+}
+
+.cuerpo {
+	background-color: var(--dark-cyan);
+	background-image: url('../images/bg-pattern-top.svg'),
+		url('../images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat;
+	background-position: left -30% top 90%, right -20% bottom 250%;
+	margin: 0;
+	padding: 50px;
+	font-family: 'Kumbh Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	color: var(very-dark-desaturated-blue);
+	margin: 0;
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+h1 span {
+	color: #9d9ca3;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+h2 {
+	color: #9d9ca3;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 80px;
+}
+
+.card {
+	border-radius: 20px;
+	overflow: hidden; /*para que el contenido del card no se salga... desvordamiento... se oculta */
+	background: white url('../images/bg-pattern-card.svg') repeat-x;
+	/* background-repeat: repeat no-repeat; */
+	text-align: center; /* todo lo que hay dentro del card se centra */
+	padding-top: 80px;
+	max-width: 375px;
+	flex-shrink: 0;
+	flex-grow: 1; /* propiedad de agrandamiento total, a esto le detiene max-width */
+}
+
+.image {
+	border-radius: 50%;
+	border: 8px solid white;
+}
+
+.social {
+	display: flex; /* flex:todo en linea pero se puede distribuir / inline: todo en linea */
+	justify-content: space-evenly; /*center:todo_al_medio, space-beetween: divide el espacio para todos, space-evenly: centra todo*/
+	border: 1px solid var(--dark-gray);
+	border-top: 1px solid #e8e8e8;
+	padding: 10px 0;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+.social h3 span {
+	margin-top: 8px;
+	display: block; /* por defecto biene en linea pero ahora cambia a bloque */
+	color: #9d9ca3;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 2px;
+}

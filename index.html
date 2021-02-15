@@ -15,7 +15,7 @@
 		<title>Profile card component</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
+		<!-- <style>
 			.attribution {
 				font-size: 11px;
 				text-align: center;
@@ -23,20 +23,41 @@
 			.attribution a {
 				color: hsl(228, 45%, 44%);
 			}
-		</style>
+		</style> -->
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
-		<h1>Victor Crest <span>26</span></h1>
-		<h2>London</h2>
+	<body class="cuerpo">
+		<main class="card">
+			<img
+				class="image"
+				id="image_victor"
+				src="./images/image-victor.jpg"
+				alt=""
+			/>
+			<h1>Victor Crest <span>26</span></h1>
+			<h2>London</h2>
 
-		<h3>80K</h3>
-		<h4>Followers</h4>
+			<div class="div social">
+				<h3>
+					80K
+					<span>Followers</span>
+				</h3>
 
-		<h3>803K</h3>
-		<h4>Likes</h4>
+				<h3>
+					803K
+					<span>Likes</span>
+				</h3>
 
-		<h3>1.4K</h3>
-		<h4>Photos</h4>
-		<div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+				<h3>
+					1.4K
+					<span>Photos</span>
+				</h3>
+			</div>
+		</main>
 	</body>
 </html>
